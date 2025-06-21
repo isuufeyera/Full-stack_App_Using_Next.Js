@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <div className='custom-container '>
+        <div className='custom_container '>
           <Navbar />
           {children}
           <Footer />

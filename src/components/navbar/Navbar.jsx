@@ -1,5 +1,5 @@
 'use client';
-
+import styles from './page.module.css';
 import Link from 'next/link';
 import { title } from 'process';
 import React from 'react';
@@ -42,7 +42,7 @@ const Navbar = () => {
     <div>
       {' '}
       <Link href={'/'}>itSC</Link>
-      <div>
+      <div className={styles.custom_container}>
         {links.map((link) => (
           <Link key={link.id} href={link.url}>
             {link.title}
